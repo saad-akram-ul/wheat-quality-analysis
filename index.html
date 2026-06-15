@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheat Quality Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Wheat Quality Analysis System</h1>
+    <p>Professional Wheat Quality Assessment Platform</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Analysis</a>
+    <a href="#">Reports</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Analyze Wheat Quality Instantly</h2>
+    <p>
+        Enter wheat sample information to evaluate grain quality
+        based on moisture and protein content.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Wheat Sample Analysis</h2>
+
+        <label>Farmer Name</label>
+        <input type="text" id="farmer" placeholder="Enter Farmer Name">
+
+        <label>Sample ID</label>
+        <input type="text" id="sampleId" placeholder="Enter Sample ID">
+
+        <label>Moisture (%)</label>
+        <input type="number" id="moisture" placeholder="Enter Moisture">
+
+        <label>Protein (%)</label>
+        <input type="number" id="protein" placeholder="Enter Protein Content">
+
+        <button onclick="analyzeWheat()">
+            Analyze Sample
+        </button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Quality Parameters</h2>
+
+        <ul>
+            <li>Moisture Content</li>
+            <li>Protein Percentage</li>
+            <li>Grain Purity</li>
+            <li>Kernel Size</li>
+            <li>Foreign Material Detection</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Wheat Quality Analysis System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
